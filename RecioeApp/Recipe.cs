@@ -18,42 +18,42 @@ namespace RecipeApp
                 steps = new List<string>();
             }
 
-           // details of the ingredients
-           
-                public void EnterDetails()
-                {
-                Console.Write("Enter the number of ingredients: ");
-                int numIngredients = int.Parse(Console.ReadLine());
+        // details of the ingredients
 
-                for (int i = 0; i < numIngredients; i++)
-                {
-                    Console.Write($"Enter ingredient {i + 1} name: ");
-                    string name = Console.ReadLine();
+        public void EnterDetails()
+        {
+            Console.Write("Enter the number of ingredients: ");
+            int numIngredients = int.Parse(Console.ReadLine());
 
-                    Console.Write($"Enter quantity for {name}: ");
-                    double quantity = double.Parse(Console.ReadLine());
+            for (int i = 0; i < numIngredients; i++)
+            {
+                Console.Write($"Enter ingredient {i + 1} name: ");
+                string name = Console.ReadLine();
 
-                    Console.Write($"Enter unit of measurement for {name}: ");
-                    string unit = Console.ReadLine();
+                Console.Write($"Enter quantity for {name}: ");
+                double quantity = double.Parse(Console.ReadLine());
 
-                    ingredients.Add(new Ingredient(name, quantity, unit));
-                }
+                Console.Write($"Enter unit of measurement for {name}: ");
+                string unit = Console.ReadLine();
 
-                Console.Write("Enter the number of steps: ");
-                int numSteps = int.Parse(Console.ReadLine());
+                ingredients.Add(new Ingredient(name, quantity, unit));
+            }
 
-                for (int i = 0; i < numSteps; i++)
-                {
-                    Console.Write($"Enter step {i + 1}: ");
-                    string step = Console.ReadLine();
-                    steps.Add(step);
-                }
+            Console.Write("Enter the number of steps: ");
+            int numSteps = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Recipe details entered successfully.");
-                }
+            for (int i = 0; i < numSteps; i++)
+            {
+                Console.Write($"Enter step {i + 1}: ");
+                string step = Console.ReadLine();
+                steps.Add(step);
+            }
 
-                // display the ingredients
-                public void Display()
+            Console.WriteLine("Recipe details entered successfully.");
+        }
+
+        // display the ingredients
+        public void Display()
                 {
                 Console.WriteLine("\nRecipe:");
                 Console.WriteLine("Ingredients:");
