@@ -83,6 +83,7 @@ namespace RecipeApp
             Console.WriteLine("Recipe scaled successfully.");
         }
 
+            // reset quantities
         public void ResetQuantities()
         {
             foreach (Ingredient ingredient in ingredients)
