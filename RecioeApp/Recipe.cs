@@ -84,16 +84,16 @@ namespace RecipeApp
         }
 
         public void ResetQuantities()
+        {
+            foreach (Ingredient ingredient in ingredients)
             {
-                foreach (Ingredient ingredient in ingredients)
-                {
-                    ingredient.ResetQuantity();
-                }
-
-                Console.WriteLine("Quantities reset to original values.");
+                ingredient.ResetQuantity();
             }
 
-            public void ClearData()
+            Console.WriteLine("Quantities reset to original values.");
+        }
+
+        public void ClearData()
             {
                 ingredients.Clear();
                 steps.Clear();
