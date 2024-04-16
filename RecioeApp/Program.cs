@@ -12,6 +12,8 @@ namespace RecipeApp
 
             while (!exit)
             {
+                // menue options
+
                 Console.WriteLine("1. Enter Recipe Details");
                 Console.WriteLine("2. Display Recipe");
                 Console.WriteLine("3. Scale Recipe");
