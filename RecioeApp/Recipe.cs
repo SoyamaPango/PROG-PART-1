@@ -18,8 +18,10 @@ namespace RecipeApp
                 steps = new List<string>();
             }
 
-            public void EnterDetails()
-            {
+           // details of the ingredients
+           
+                public void EnterDetails()
+                {
                 Console.Write("Enter the number of ingredients: ");
                 int numIngredients = int.Parse(Console.ReadLine());
 
@@ -48,10 +50,11 @@ namespace RecipeApp
                 }
 
                 Console.WriteLine("Recipe details entered successfully.");
-            }
+                }
 
-            public void Display()
-            {
+                // display the ingredients
+                public void Display()
+                {
                 Console.WriteLine("\nRecipe:");
                 Console.WriteLine("Ingredients:");
                 foreach (Ingredient ingredient in ingredients)
@@ -64,9 +67,10 @@ namespace RecipeApp
                 {
                     Console.WriteLine($"{i + 1}. {steps[i]}");
                 }
-            }
+               }
 
-            public void Scale()
+                 // scales the ingredients
+                public void Scale()
             {
                 Console.Write("Enter scale factor (0.5 for half, 2 for double, 3 for triple): ");
                 double factor = double.Parse(Console.ReadLine());

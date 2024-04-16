@@ -8,7 +8,7 @@ namespace RecipeApp
 {
     internal class Ingredient
     {
-       
+       // getters
             public string Name { get; }
             public double Quantity { get; private set; }
             public string Unit { get; }
