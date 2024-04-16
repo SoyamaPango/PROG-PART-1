@@ -38,6 +38,7 @@ namespace RecipeApp
 
                 ingredients.Add(new Ingredient(name, quantity, unit));
             }
+            // prompts the user to enter the number os steps 
 
             Console.Write("Enter the number of steps: ");
             int numSteps = int.Parse(Console.ReadLine());
