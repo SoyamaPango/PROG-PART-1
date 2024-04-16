@@ -94,6 +94,7 @@ namespace RecipeApp
             Console.WriteLine("Quantities reset to original values.");
         }
 
+        // clears all data
         public void ClearData()
             {
                 ingredients.Clear();
