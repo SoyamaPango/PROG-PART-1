@@ -69,21 +69,21 @@ namespace RecipeApp
                 }
                }
 
-                 // scales the ingredients
-                public void Scale()
+        // scales the ingredients
+        public void Scale()
+        {
+            Console.Write("Enter scale factor (0.5 for half, 2 for double, 3 for triple): ");
+            double factor = double.Parse(Console.ReadLine());
+
+            foreach (Ingredient ingredient in ingredients)
             {
-                Console.Write("Enter scale factor (0.5 for half, 2 for double, 3 for triple): ");
-                double factor = double.Parse(Console.ReadLine());
-
-                foreach (Ingredient ingredient in ingredients)
-                {
-                    ingredient.ScaleQuantity(factor);
-                }
-
-                Console.WriteLine("Recipe scaled successfully.");
+                ingredient.ScaleQuantity(factor);
             }
 
-            public void ResetQuantities()
+            Console.WriteLine("Recipe scaled successfully.");
+        }
+
+        public void ResetQuantities()
             {
                 foreach (Ingredient ingredient in ingredients)
                 {
