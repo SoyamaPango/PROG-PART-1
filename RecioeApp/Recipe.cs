@@ -54,20 +54,20 @@ namespace RecipeApp
 
         // display the ingredients
         public void Display()
-                {
-                Console.WriteLine("\nRecipe:");
-                Console.WriteLine("Ingredients:");
-                foreach (Ingredient ingredient in ingredients)
-                {
-                    Console.WriteLine($"{ingredient.Name}: {ingredient.Quantity} {ingredient.Unit}");
-                }
+        {
+            Console.WriteLine("\nRecipe:");
+            Console.WriteLine("Ingredients:");
+            foreach (Ingredient ingredient in ingredients)
+            {
+                Console.WriteLine($"{ingredient.Name}: {ingredient.Quantity} {ingredient.Unit}");
+            }
 
-                Console.WriteLine("\nSteps:");
-                for (int i = 0; i < steps.Count; i++)
-                {
-                    Console.WriteLine($"{i + 1}. {steps[i]}");
-                }
-               }
+            Console.WriteLine("\nSteps:");
+            for (int i = 0; i < steps.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {steps[i]}");
+            }
+        }
 
         // scales the ingredients
         public void Scale()
