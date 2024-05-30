@@ -83,7 +83,6 @@ namespace RecipeApp
             }
             Console.WriteLine($"Total Calories: {totalCalories}");
         }
-
         // Calculate total calories of the recipe
         private void CalculateTotalCalories()
         {
