@@ -8,6 +8,8 @@ namespace RecipeWPF
         public string RecipeName { get; private set; }
         public List<Ingredient> EnteredIngredients { get; private set; }
         public List<string> EnteredSteps { get; private set; }
+        public string FoodGroup {  get; private set; }
+        public int Calories { get; private set; }
 
         public EnterRecipeWindow()
         {
@@ -16,14 +18,12 @@ namespace RecipeWPF
             EnteredSteps = new List<string>();
         }
 
-        // Method to return the entered recipe
         public Recipe GetEnteredRecipe()
         {
             Recipe newRecipe = new Recipe
             {
                 Name = RecipeName,
                 Ingredients = EnteredIngredients,
-                // You may need to set FoodGroup and Calories here based on user input
             };
 
             return newRecipe;
@@ -42,7 +42,6 @@ namespace RecipeWPF
 
         private void AddStep_Click(object sender, RoutedEventArgs e)
         {
-            // Open a dialog or add steps directly in this window
             var stepDialog = new EnterStepWindow();
             if (stepDialog.ShowDialog() == true)
             {
@@ -54,7 +53,7 @@ namespace RecipeWPF
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             RecipeName = RecipeNameTextBox.Text.Trim();
-            DialogResult = true; // Set DialogResult to true to indicate successful completion
+            DialogResult = true;
             Close();
         }
 
