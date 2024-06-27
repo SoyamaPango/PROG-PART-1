@@ -59,7 +59,7 @@ namespace RecipeWPF
 
         private void RefreshIngredientsListView()
         {
-            // Refresh the ListView with updated ingredients list
+            
             IngredientsListView.ItemsSource = null;
             IngredientsListView.ItemsSource = EnteredIngredients;
         }
