@@ -1,0 +1,28 @@
+﻿<Window x:Class="RecipeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RecipeApp" Height="400" Width="600">
+    <Grid>
+        <StackPanel>
+            <Button Content="Enter Recipe Details" Click="EnterRecipeDetails_Click"/>
+            <Button Content="Display Recipe List" Click="DisplayRecipeList_Click"/>
+            <Button Content="Display Recipe by Name" Click="DisplayRecipeByName_Click"/>
+
+            <!-- Filter Section -->
+            <TextBox x:Name="IngredientTextBox" Width="200" Text="Enter ingredient" Foreground="Gray" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <ComboBox x:Name="FoodGroupComboBox" Width="200" SelectedIndex="0">
+                <ComboBoxItem Content="Choose a food group" IsSelected="True" IsEnabled="False"/>
+                <ComboBoxItem Content="Meat"/>
+                <ComboBoxItem Content="Vegetable"/>
+                <ComboBoxItem Content="Fruit"/>
+                <ComboBoxItem Content="Grain"/>
+                <ComboBoxItem Content="Dairy"/>
+            </ComboBox>
+            <TextBox x:Name="CaloriesTextBox" Width="200" Text="Enter max calories" Foreground="Gray" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+            <Button Content="Filter Recipes" Click="FilterButton_Click"/>
+
+            <ListBox x:Name="RecipeListBox"/>
+            <TextBlock x:Name="RecipeDetailsTextBlock" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>

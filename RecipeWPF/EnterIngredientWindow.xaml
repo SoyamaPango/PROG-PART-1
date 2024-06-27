@@ -1,0 +1,20 @@
+﻿<Window x:Class="RecipeWPF.EnterIngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enter Ingredient" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="IngredientNameTextBox" Text="Enter ingredient name" Margin="5" 
+                     GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+            <TextBox x:Name="QuantityTextBox" Text="Enter quantity" Margin="5" 
+                     GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+            <TextBox x:Name="UnitTextBox" Text="Enter unit" Margin="5" 
+                     GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+            <TextBox x:Name="IngredientCaloriesTextBox" Text="Enter calories" Margin="5" 
+                     GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+            <TextBox x:Name="IngredientFoodGroupTextBox" Text="Enter food group" Margin="5" 
+                     GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+            <Button Content="Save" Click="SaveButton_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
