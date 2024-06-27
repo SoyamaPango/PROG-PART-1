@@ -7,10 +7,8 @@ namespace RecipeWPF
 {
     public partial class EnterIngredientWindow : Window, INotifyPropertyChanged
     {
-        // Private field for NewIngredient
         private Ingredient _newIngredient;
 
-        // Property to store the new ingredient entered by the user
         public Ingredient NewIngredient
         {
             get { return _newIngredient; }
