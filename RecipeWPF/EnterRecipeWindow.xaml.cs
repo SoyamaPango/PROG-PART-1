@@ -66,7 +66,6 @@ namespace RecipeWPF
 
         private void RefreshStepsListBox()
         {
-            // Refresh the ListBox with updated steps list
             StepsListBox.ItemsSource = null;
             StepsListBox.ItemsSource = EnteredSteps;
         }
