@@ -26,12 +26,12 @@ namespace RecipeWPF
         {
             InitializeComponent();
             AddPlaceholderText(null, null);
-            DataContext = this; // Set DataContext to this window for proper binding
+            DataContext = this; 
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            // Retrieve values from text boxes
+            
             string name = IngredientNameTextBox.Text.Trim();
             string quantityText = QuantityTextBox.Text.Trim();
             string unit = UnitTextBox.Text.Trim();
