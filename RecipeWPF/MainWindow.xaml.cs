@@ -70,6 +70,7 @@ namespace RecipeWPF
             {
                 RecipeDetailsTextBlock.Text = "Select a recipe from the list.";
             }
+
         }
 
         private void FilterButton_Click(object sender, RoutedEventArgs e)
